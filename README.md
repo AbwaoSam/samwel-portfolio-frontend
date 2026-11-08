@@ -1,16 +1,53 @@
-# React + Vite
+# Samwel Abwao — Portfolio Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, editorial-style personal portfolio built to showcase my software engineering skills, projects, and experience. This is the React frontend for the application, designed to be visually striking, highly responsive, and fully dynamic.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [https://samwel-abwao.vercel.app/](https://samwel-abwao.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+- **Dynamic Project Showcase:** Projects are fetched directly from a MongoDB database via a custom Node.js API.
+- **AI Assistant:** A custom floating chatbot integrated with the OpenAI API (`gpt-5.4-mini`) that answers questions about my skills, background, and experience.
+- **Contact Form:** A fully functional contact form that sends emails directly to my inbox using the Resend API.
+- **Admin Dashboard:** A hidden, password-protected route (`/admin`) that allows me to add and delete projects without touching the code.
+- **Fully Responsive:** Carefully crafted mobile-first design with a custom hamburger menu, responsive grids, and smooth scrolling.
+- **Modern Animations:** Subtle, high-performance animations using Framer Motion.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:**
+- React.js (Vite)
+- Tailwind CSS (Custom editorial design)
+- Framer Motion (Animations)
+- React Router (For the hidden `/admin` dashboard)
+- React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend (Separate Repo):**
+- Node.js & Express
+- MongoDB & Mongoose
+- OpenAI API
+- Resend (Email API)
+
+##  Getting Started (Local Development)
+
+To run this project locally, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/AbwaoSam/samwel-portfolio-frontend.git
+cd samwel-portfolio-frontend
+```
+
+### 2.  Install dependencies
+```bash
+npm install
+```
+### 3. Set up Environment Variables
+Create a .env file in the root directory. Because the backend is deployed on Render, the frontend currently points directly to the live API. If you are running the backend locally, you will need to update the fetch URLs in App.jsx and Admin.jsx to point to http://localhost:5000.
+
+### 4.  Run the development server
+```bash
+npm run dev
+```
+
+
