@@ -141,7 +141,9 @@ const App = () => {
         <div className="flex justify-between items-center w-full">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="bg-[#1e4635] text-white p-2 rounded-full"><FaBriefcase size={14} /></div>
+            <div className="bg-[#f4b316] text-[#1e4635] w-8 h-8 rounded-full flex items-center justify-center font-bold text-xl serif">
+              S
+            </div>
             <h1 className="text-xl font-bold tracking-tight">Samwel.</h1>
           </div>
 
@@ -501,7 +503,9 @@ const App = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 border-b border-slate-200 pb-16 items-start">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-[#1e4635] text-white p-2 rounded-full"><FaBriefcase size={14} /></div>
+              <div className="bg-[#f4b316] text-[#1e4635] w-9 h-9 rounded-full flex items-center justify-center font-bold text-2xl serif">
+                S
+              </div>
               <h1 className="text-2xl font-bold tracking-tight">Samwel.</h1>
             </div>
             <p className="text-slate-500 max-w-sm mb-6">Software Engineer specializing in Web Development, Android Development, Databases, and DevOps. Building solutions for the modern web.</p>
